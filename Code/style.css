@@ -16,31 +16,35 @@ body {
 /* END HEADER */
 
 /* ICONE RESEAUX SOCIAUX */
-.lesicones {
-	max-height: 20px;
+/* .lesicones {
+	height: 30px;
+} */
+.lesicones > a {
+	height: 100%;
 }
 
 i > img {
-	height: 15px;
+	height: 25px;
 }
 
 /* NAVBAR */
 nav {
 	border-top: solid 2px rgb(249, 178, 50);
-	height: 20px;
+	height: 40px;
 	background-color: rgb(61, 61, 61);
 }
 
 .nav-pills {
-	font-size: 70%;
+	font-size: 100%;
 }
 
 .nav-link {
 	padding: 0px;
-	margin-left: 5px;
+	margin-left: 10px;
 }
 
 li > a {
+	font-size: 1.5em;
 	list-style: none;
 	color: white;
 }
@@ -68,8 +72,8 @@ li > a:hover {
 
 /* CAROUSSEL */
 .parent-carousel * {
-	max-height: 300px;
-	max-width: 800px;
+	max-height: 500px;
+	max-width: 960px;
 }
 
 /* END CAROUSSEL */
@@ -80,8 +84,6 @@ li > a:hover {
 .card-1 , .card-2, .card-3{
 	width: 100%;
 	display: flex;
-}
-h2 {
 	color: white;
 }
 
