@@ -1,0 +1,117 @@
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fontIcomoon/fonts/icomoon.eot?t5umas');
+	src:  url('../fontIcomoon/fonts/icomoon.eot?t5umas#iefix') format('embedded-opentype'),
+	  url('../fontIcomoon/fonts/icomoon.ttf?t5umas') format('truetype'),
+	  url('../fontIcomoon/fonts/icomoon.woff?t5umas') format('woff'),
+	  url('../fontIcomoon/fonts/icomoon.svg?t5umas#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-copyright:before {
+	content: "\e900";
+  }
+  .icon-phone:before {
+	content: "\e942";
+  }
+  .icon-facebook2:before {
+	content: "\ea91";
+  }
+  .icon-instagram:before {
+	content: "\ea92";
+  }
+
+body {
+	width: 100%;
+	background-color: rgb(237, 237, 238);
+}
+  
+/* HEADER */
+header, nav {
+	background-color: rgb(61, 61, 61);
+}
+
+.lesicones *{
+	color: rgb(249, 178, 50);
+	font-size: 2rem;
+}
+
+a, .logo {
+	display: flex;
+	justify-content: center;
+}
+
+.header .logo{
+	background-color: white;
+	border-radius: 100%;
+}
+
+/* NAVBAR */
+
+nav, .navbar {
+	display: flex;
+	justify-content: center;
+}
+
+.menu-burger {
+	width: 2rem;
+	height: 2rem;
+	background-color: white;
+}
+
+.nav-link{
+	color: white;
+}
+
+.nav-link:hover {
+	color: rgb(249, 178, 50);
+}
+
+/* END NAVBAR */
+
+/* END HEADER */
+
+/* CAROUSSEL */
+.parent-carousel * {
+	max-height: 500px;
+	max-width: 960px;
+}
+
+/* END CAROUSSEL */
+
+/* CARD */
+
+.card {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.imgcard {
+	width: 50%;
+}
+
+.macard {
+	width: 50%;
+	background-color: rgb(61, 61, 61);
+}
+
+
+/* END CARD */
