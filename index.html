@@ -18,9 +18,9 @@
 </head>
 
 <body>
-
-	<header>
-	<div class="container col-11">
+	<header id="haut">
+		<!-- <h1 id="haut"></h1> -->
+		<div class="container col-11">
 		<div class="d-flex flex-row-reverse lesicones mr-2 mb-n4">
 			<a href="https://fr-fr.facebook.com/WSS.THANN/" class="icon-facebook2 mr-2 mt-2"></a>
 			<a href="https://www.instagram.com/warriorssoft/" class="icon-instagram mr-2 mt-2"></a>
@@ -29,7 +29,9 @@
 		</div>
 	</div>
 		<div class="container-fluid header pb-1">
-			<a href="index.html"><img class="col-3 p-2 ml-3 logo" src="../WARRIORSSOFT-LOGO-72DPI-RVB.png"></a>
+			<div class="container d-flex justify-content-center">
+				<a href="index.html" class="col-3"><img class="col-12 p-2 ml-3 logo" src="../WARRIORSSOFT-LOGO-72DPI-RVB.png"></a>
+			</div>
 		</div>
 	</header>
 	<!-- Navbar -->
@@ -39,6 +41,7 @@
 				<img src="../IMG/Hamburger_Menu-512.png" alt="menu" class="menu-burger">
 			</button>
 			<div class="collapse navbar-collapse justify-content-center" id="mainNavBar">
+				<a href="index.html" class="col-1 ml-n5 mr-5 from-left"><img class="col-12 p-2 ml-3 logo" src="../WARRIORSSOFT-LOGO-72DPI-RVB.png"></a>
 				<ul class="navbar-nav nav-pills ml-3 d-flex">
 					<li class="nav-item">
 						<a class="nav-link" href="#">Evénements</a>
@@ -95,13 +98,17 @@
 				</a>
 			</div>
 		</div>
-		<div class="container col-11">
-			<div class="card col-12 mb-3 ">
+		<div class="container col-10 p-0 mb-5 d-flex flex-column justify-content-center align-items-center horaires">
+			<h1>Horaires d'ouverture</h1>
+			<p class="pl-3 pr-3">Du Mardi au Vendredi de <span class="orange">14h30 à 19h</span><br>
+				Le Samedi de <span class="orange">10H à 12H et de 14h à 18h</span></p>
+		</div>
+		<div class="container col-10 p-0">
+			<div class="card col-12 mb-4 p-0">
 				<img src="../IMG/suit-673697_1920.jpg" class="imgcard">
 				<div class="macard d-flex flex-column justify-content-center align-items-center">
-					<h2 class="mt-2 mb-3">Les Services</h2>
-					<p>Vous trouverez ici les diffèrents services que l'on propose</p>
-					<ul>
+					<h1 class="mt-2 mb-3 from-right">Les Services</h1>
+					<ul class="from-right pt-3">
 						<li>- Réparation</li>
 						<li>- Upgrade</li>
 						<li>- personnalisation</li>
@@ -111,16 +118,18 @@
 					</ul>
 				</div>
 			</div>
-			<div class="card col-12 mb-3">
-				<div class="macard">
-					<h2>Les Evènements</h2>
+			<div class="card col-12 mb-4 p-0">
+				<div class="macard d-flex flex-column justify-content-center align-items-center">
+					<h1>Les Evènements</h1>
+					<h2 class="pt-3">Vous trouverez les futurs évenements ici</h2>
 				</div>
 				<img src="../IMG/suit-673697_1920.jpg" class="imgcard">
 			</div>
-			<div class="card col-12 mb-5">
+			<div class="card col-12 mb-5 p-0">
 				<img src="../IMG/suit-673697_1920.jpg" class="imgcard">
-				<div class="macard">
-					<h2>La Galerie</h2>
+				<div class="macard d-flex flex-column justify-content-center align-items-center">
+					<h1>La Galerie</h1>
+					<h2 class="pt-3 pl-3 pr-3">En passent par les évenements qui ont été organisé, ou encore les parties et même les petits moment fun passé avec la team <span class="orange h2">Warrior's Soft</span>, tout les souvenirs sont ici</h2>
 				</div>
 			</div>
 		</div>
@@ -130,12 +139,46 @@
 	</main>
 
 	<footer>
-		<div class="container-fluid monfooter">
-			<div class="imgfooter">
-				<img src="../WARRIORSSOFT-LOGO-72DPI-RVB.png">
+		<div class="container-fluid p-0 d-flex justify-content-between monfooter">
+			<div class="container">
+				<a href="index.html"><img class="col-3 logo" src="../WARRIORSSOFT-LOGO-72DPI-RVB.png"></a>
+			</div>
+			<div class="col-4">
+				<ul class="navbar-nav nav-pills ml-3 d-flex">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Evénements</a>
+					</li>
+					<li class="nav-item dropdown ml-2">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+							aria-haspopup="true" aria-expanded="false">Custom</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Pièces sur mesure</a>
+							<a class="dropdown-item" href="#">Upgrade</a>
+							<a class="dropdown-item" href="#">Sablage</a>
+							<a class="dropdown-item" href="#">Peinture</a>
+							<a class="dropdown-item" href="#">Impression 3d</a>
+						</div>
+					</li>
+					<li class="nav-item ml-2">
+						<a class="nav-link" href="#">Jeux vidéo</a>
+					</li>
+					<li class="nav-item ml-2">
+						<a class="nav-link" href="#">Galerie</a>
+					</li>
+					<li class="nav-item ml-2">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="d-flex flex-row-reverse col-4 lesicones">
+				<a href="https://fr-fr.facebook.com/WSS.THANN/" class="icon-facebook2 mr-2 mt-2"></a>
+				<a href="https://www.instagram.com/warriorssoft/" class="icon-instagram mr-2 mt-2"></a>
+				<a href="https://www.google.com/search?q=warrior%E2%80%99s+soft+t%C3%A9l%C3%A9phone&ludocid=10054409921961320554&sa=X&ved=2ahUKEwixk8z8-YXqAhWG66QKHcoGD_IQ6BMwGnoECBEQDQ&biw=1920&bih=937"
+					class="icon-phone mr-2 mt-2"></a>
 			</div>
 		</div>
-	</footer>
+	</footer>   
+	<div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -146,6 +189,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 		crossorigin="anonymous"></script>
+	<script  src="script/script.js"></script>
+	<script src="script/script_up.js"></script>
 
 </body>
 
