@@ -60,22 +60,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3d3d3d",endCo
 	font-size: 1.2rem;
 }
 
-.titleheader>li:nth-child(2) {
-	text-indent: 1rem;
-}
-
-.titleheader>li:nth-child(3) {
-	text-indent: 2rem;
-}
-
-.titleheader>li:nth-child(4) {
-	text-indent: 3rem;
-}
-
-.titleheader>li:nth-child(5) {
-	text-indent: 4rem;
-}
-
 .lesicones *{
 	color: white;
 	font-size: 32px;
@@ -150,12 +134,12 @@ nav{
 	width: 2rem;
 	height: 32px;
 	height: 2rem;
-	background-color: white;
+	background-color: rgb(249, 178, 50);
 }
 
 .nav-link{
-	color: black;
-	border-bottom: solid 1px rgb(249, 178, 50);
+	color: white;
+
 }
 
 .nav-link:hover {
@@ -262,9 +246,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3d3d3d",endCo
 
 /* END FOOTER */
 
-@media all and (max-width: 992px) {
-	
-}
 /* ANIMATION SCROLL */
 .from-right,
 .from-left {
@@ -305,7 +286,10 @@ a#cRetour{
 	-webkit-backface-visibility: hidden;
 	text-decoration: none;
   }
-  a#cRetour:before{ content: "\25b2"; }
+  a#cRetour:before{ 
+	  content: "\25b2"; 
+	}
+
   a#cRetour:hover{
 	background:rgb(249, 178, 50);
 	-webkit-transition: all ease-in 0.2s;
@@ -346,10 +330,7 @@ a#cRetour{
 	width:100%;
 	position:absolute;
 	}
-	/* END RESPONSIVE MAPS */
-
-
-
+/* END RESPONSIVE MAPS */
 
 /* LIGHTBOX */
 	.petite, .grande {
@@ -363,7 +344,6 @@ a#cRetour{
 		width: 100vw;
 		height: 100vh;
 		background-color: rgba(0, 0, 0, 0.4);
-	
 		display: none;
 		align-items: center;
 		justify-content: center;
@@ -375,3 +355,45 @@ a#cRetour{
 		border-radius: 5px;
 	}
 /* END LIGHTBOX */
+
+@media all and (max-width: 576px) {
+	.header {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.titleheader {
+		margin-top: 20%;
+	}
+
+
+	.lesicones {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-bottom: 10px;
+	}
+
+	.parent-carousel *{
+		content: url(../IMG/80661092_3591651450875097_8109583001484001280_o.jpg);
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.imgcard, .macard {
+		width: 100%;
+	}
+
+	footer>.monfooter>.navfooter,
+	footer>.monfooter>.lesicones {
+		display: none;
+	}
+
+}
