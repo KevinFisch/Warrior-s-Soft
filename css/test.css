@@ -228,6 +228,10 @@ background: linear-gradient(351deg, rgba(61,61,61,1) 0%, rgba(61,61,61,0.7035189
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3d3d3d",endColorstr="#3d3d3d",GradientType=1);
 }
 
+.reseau {
+	font-size: 4rem;
+}
+
 /* END CARD */
 
 /* FOOTER */
@@ -252,17 +256,26 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3d3d3d",endCo
 	color: white;
 }
 
+.footer2 {
+	background-color: black;
+	height: 50px;
+}
+
+.footer2>a {
+	color: white;
+}
+
 /* END FOOTER */
 
 /* ANIMATION SCROLL */
-.from-right,
-.from-left {
+.from-right, .from-left {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 1s ease-in-out;
     transition: opacity 0.5s ease-in-out, -webkit-transform 1s ease-in-out;
     transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
-    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 1s ease-in-out;
+	transition: transform 1s ease-in-out, opacity 0.5s ease-in-out, 
+	-webkit-transform 1s ease-in-out;
 }
 .from-right {
     -webkit-transform: translate(50px,-30px);
@@ -341,27 +354,38 @@ a#cRetour{
 /* END RESPONSIVE MAPS */
 
 /* LIGHTBOX */
-	.petite, .grande {
-		cursor: pointer
+.petite {
+	max-height: 700px;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+}
+
+.petite:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+
+.petite, .grande {
+	cursor: pointer;
 	}
 	
-	.grande {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		background-color: rgba(0, 0, 0, 0.4);
-		display: none;
-		align-items: center;
-		justify-content: center;
-	}
+.grande {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
 	
-	.grande img {
-		width: 60%;
-		border: 4px white solid;
-		border-radius: 5px;
-	}
+.grande img {
+	width: 40%;
+	border: 4px white solid;
+	border-radius: 5px;
+}
 /* END LIGHTBOX */
 
 @media all and (max-width: 576px) {
@@ -372,15 +396,21 @@ a#cRetour{
 	}
 
 	.titleheader {
-		margin-top: 20%;
+		display: none;
 	}
 
+	.horaireOuverture {
+		margin-left: 20%;
+		margin-right: 20%;
+		padding: 0;
+	}
 
 	.lesicones {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		padding-bottom: 10px;
+		margin-bottom: 15px;
 	}
 
 	.parent-carousel *{
@@ -402,6 +432,10 @@ a#cRetour{
 	footer>.monfooter>.navfooter,
 	footer>.monfooter>.lesicones {
 		display: none;
+	}
+
+	.imgfooter {
+		margin-left: 25%;
 	}
 
 }
